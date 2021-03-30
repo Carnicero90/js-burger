@@ -123,6 +123,7 @@ h2 {
 }
 
 .logging-icon {
+    font-size: 150%;
     animation-name: spin;
     animation-duration: 1s;
     animation-iteration-count: infinite;
