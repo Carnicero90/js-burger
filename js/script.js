@@ -1,6 +1,9 @@
 const basePrice = 50;
 
-document.getElementById("output").innerHTML = basePrice;
+document.getElementById("output").innerHTML = basePrice.toLocaleString("it-IT", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+});
 document.getElementById("discount-code").value = "";
 
 var calculatePrice = document.getElementById('calc-price');

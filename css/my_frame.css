@@ -38,6 +38,10 @@ table {
     border-spacing: 0;
 }
 
+input {
+    border: none;
+}
+
 /* CLASSES */
 
 /* Classes>flow */

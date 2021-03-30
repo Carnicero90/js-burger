@@ -26,6 +26,7 @@ header {
 }
 
 main {
+    padding-top: 30px;
     flex-grow: 1;
     overflow-y: auto;
 }
@@ -44,6 +45,16 @@ main {
 
 /* MICRO LAYOUT
    ======================= */
+#burger-name {
+    font-size: 150%;
+}
+
+h2 {
+    padding-top: 30px;
+    font-weight: 400;
+    font-size: 140%;
+}
+
 .ingredients {
     padding-bottom: 20px;
     padding-top: 20px;
@@ -59,10 +70,14 @@ main {
     margin-right: 20px;
 }
 
+.coupon label {
+    padding-right: 10px
+}
+
 #discount-code {
+    padding: 5px;
     width: 70%;
     background-color: #fff4e2;
-    border: none;
     border-radius: 4px;
     line-height: 120%;
 }

@@ -17,10 +17,12 @@
 <body>
     <div class="burger-wrapper flexer col">
         <header class="wrapper">
-            <h1>CREATE YOUR BURGER</h1>
+            <h1>Create Your Burger</h1>
         </header>
         <main class="wrapper">
-            <input type="text" placeholder="Name your burger">
+            <div class="choose-name">
+                <input id="burger-name" type="text" placeholder="Name Your Burger">
+            </div>
             <h2>Ingredients</h2>
 
             <ul class="ingredients flexer wrap">
@@ -32,8 +34,8 @@
                 <li class="ingredient flexer center-cross"><img src="img/ketchup.svg" alt="ketchup" class="food-logo rounded"><label for="">Ketchup</label><input type="checkbox" class="ingredient-check" value="1"></li>
             </ul>
             <div class="coupon">
-                <label for="discount-code">Discount Price</label>
-                <input id="discount-code" type="text" placeholder="blabla">
+                <label for="discount-code">Discount Coupon</label>
+                <input id="discount-code" type="text" placeholder="Enter Your Coupon Code">
             </div>
             <button id="calc-price" class="block-button">calculate</button>
 
