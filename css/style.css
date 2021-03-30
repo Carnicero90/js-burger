@@ -1,6 +1,12 @@
 /* COMMON
    ======================= */
+.nada {
+    display: none;
+}
 
+.opaq {
+    opacity: 0.2;
+}
 
 /* ======================= */
 
@@ -96,6 +102,37 @@ h2 {
 
 #output::after {
     content: "\20AC";
+}
+
+/* +++ fixed +++ */
+.fixed {
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+.spin-box {
+    color: white;
+    background-color: #d23359;
+    border-radius: 5px;
+    padding: 40px;
+
+}
+
+.logging-icon {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 

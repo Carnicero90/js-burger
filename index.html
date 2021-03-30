@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- fontawesome -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="css/my_frame.css">
     <link rel="stylesheet" href="css/style.css">
     <title>BurgerMenu</title>
 </head>
 
 <body>
-    <div class="burger-wrapper flexer col">
+    <div id="burger-wrapper" class="burger-wrapper flexer col">
         <header class="wrapper">
             <h1>Create Your Burger</h1>
         </header>
@@ -26,12 +26,34 @@
             <h2>Ingredients</h2>
 
             <ul class="ingredients flexer wrap">
-                <li class="ingredient flexer center-cross"><img src="img/cheese.svg" alt="cheese" class="food-logo rounded"><label for="">Cheese</label><input type="checkbox" class="ingredient-check" value="1"></li>
-                <li class="ingredient flexer center-cross"><img src="img/tomato.svg" alt="tomato" class="food-logo rounded"><label for="">Tomato</label><input type="checkbox" class="ingredient-check" value="3"></li>
-                <li class="ingredient flexer center-cross"><img src="img/fried-egg.svg" alt="egg" class="food-logo rounded"><label for="">Egg</label><input type="checkbox" class="ingredient-check" value="1"></li>
-                <li class="ingredient flexer center-cross"><img src="img/lettuce.svg" alt="lettuce" class="food-logo rounded"><label for="">Lettuce</label><input type="checkbox" class="ingredient-check" value="2"></li>
-                <li class="ingredient flexer center-cross"><img src="img/mustard.svg" alt="mustard" class="food-logo rounded"><label for="">Mustard</label><input type="checkbox" class="ingredient-check" value="2"></li>
-                <li class="ingredient flexer center-cross"><img src="img/ketchup.svg" alt="ketchup" class="food-logo rounded"><label for="">Ketchup</label><input type="checkbox" class="ingredient-check" value="1"></li>
+                <li class="ingredient flexer center-cross">
+                    <img src="img/cheese.svg" alt="cheese" class="food-logo rounded">
+                    <label for="">Cheese</label>
+                    <input type="checkbox" class="ingredient-check" value="1">
+                </li>
+                <li class="ingredient flexer center-cross">
+                    <img src="img/tomato.svg" alt="tomato" class="food-logo rounded">
+                    <label for="">Tomato</label>
+                    <input type="checkbox" class="ingredient-check" value="3">
+                </li>
+                <li class="ingredient flexer center-cross">
+                    <img src="img/fried-egg.svg" alt="egg" class="food-logo rounded">
+                    <label for="">Egg</label>
+                    <input type="checkbox" class="ingredient-check" value="1">
+                </li>
+                <li class="ingredient flexer center-cross">
+                    <img src="img/lettuce.svg" alt="lettuce" class="food-logo rounded"><label for="">Lettuce</label><input type="checkbox" class="ingredient-check" value="2">
+                </li>
+                <li class="ingredient flexer center-cross">
+                    <img src="img/mustard.svg" alt="mustard" class="food-logo rounded">
+                    <label for="">Mustard</label>
+                    <input type="checkbox" class="ingredient-check" value="2">
+                </li>
+                <li class="ingredient flexer center-cross">
+                    <img src="img/ketchup.svg" alt="ketchup" class="food-logo rounded">
+                    <label for="">Ketchup</label>
+                    <input type="checkbox" class="ingredient-check" value="1">
+                </li>
             </ul>
             <div class="coupon">
                 <label for="discount-code">Discount Coupon</label>
@@ -43,6 +65,13 @@
         <div class="price-output wrapper flexer between center-cross">
             <span>Your Price</span>
             <span id="output"></span>
+        </div>
+    </div>
+    <div id="logging-wrapper" class="fixed nada flexer center center-cross">
+        <div class="spin-box flexer col center center-cross">
+            <span>Stiamo calcolando il prezzo...</span>
+            <!-- <i class="logging-icon fas fa-circle-notch"></i> -->
+            <i class="logging-icon fas fa-hamburger"></i>
         </div>
     </div>
 
